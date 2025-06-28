@@ -1,0 +1,5 @@
+com/beautybot/repository/RepositoryFactoryTest.class
+com/beautybot/domain/product/ProductComponentIteratorTest.class
+com/beautybot/service/FilterServiceTest.class
+com/beautybot/di/GuiceModuleTest.class
+com/beautybot/domain/product/ProductComponentTest.class

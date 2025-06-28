@@ -1,0 +1,17 @@
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/App.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/service/FilterService.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/domain/product/ProductComponent.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/notification/NotificationService.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/notification/NotificationHandler.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/reminder/ReminderService.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/domain/product/LeafProduct.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/repository/RepositoryFactory.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/notification/PriceNotificationHandler.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/scraper/JsoupProductScraper.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/domain/product/ProductComponentIterator.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/repository/JsonProductRepository.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/di/BeautyBotModule.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/service/ScraperService.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/scraper/ProductScraper.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/repository/ProductRepository.java
+/Users/corinnedaquino/Desktop/Progetto/shopping-bot/src/main/java/com/beautybot/domain/product/CompositeProduct.java

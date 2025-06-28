@@ -1,0 +1,107 @@
+@startuml class-diagram
+skinparam packageStyle rectangle
+
+package domain {
+  package product {
+    interface ProductComponent {
+      +String getName()
+      +BigDecimal getPrice()
+      +void add(ProductComponent)
+      +void remove(ProductComponent)
+      +List<ProductComponent> getChildren()
+    }
+    class LeafProduct {
+      - String name
+      - BigDecimal price
+      + LeafProduct(name, price)
+      + String getName()
+      + BigDecimal getPrice()
+    }
+    class CompositeProduct {
+      - String name
+      - List<ProductComponent> children
+      + CompositeProduct(name)
+      + String getName()
+      + BigDecimal getPrice()
+      + void add(ProductComponent)
+      + void remove(ProductComponent)
+      + List<ProductComponent> getChildren()
+      + Iterator<ProductComponent> iterator()
+    }
+    ProductComponent <|-- LeafProduct
+    ProductComponent <|-- CompositeProduct
+  }
+}
+
+package scraper {
+  interface ProductScraper {
+    +List<ProductComponent> scrape()
+  }
+  class JsoupProductScraper {
+    - String url
+    - String itemSelector
+    - String nameSelector
+    - String priceSelector
+    + JsoupProductScraper(url, itemSel, nameSel, priceSel)
+    + List<ProductComponent> scrape()
+  }
+  ProductScraper <|-- JsoupProductScraper
+}
+
+package repository {
+  interface ProductRepository {
+    +List<ProductComponent> load()
+    +void save(List<ProductComponent>)
+  }
+  class JsonProductRepository {
+    + JsonProductRepository(filePath)
+    + List<ProductComponent> load()
+    + void save(List<ProductComponent>)
+  }
+  class RepositoryFactory {
+    + static ProductRepository create(type)
+  }
+  ProductRepository <|-- JsonProductRepository
+}
+
+package service {
+  class ScraperService {
+    - ProductScraper scraper
+    - ProductRepository repo
+    + List<ProductComponent> scrapeAndPersist()
+  }
+}
+
+package notification {
+  class NotificationService {
+    - BigDecimal minPrice
+    - NotificationHandler handlerChain
+    + NotificationService(minPrice)
+    + void notifyOffers(List<ProductComponent>)
+  }
+  abstract class NotificationHandler {
+    - NotificationHandler next
+    + void setNext(NotificationHandler)
+    + void handle(ProductComponent)
+  }
+  class PriceNotificationHandler
+  NotificationHandler <|-- PriceNotificationHandler
+}
+
+package reminder {
+  class ReminderService {
+    - ScraperService scraperService
+    - NotificationService notificationService
+    - ScheduledExecutorService scheduler
+    + ReminderService(scraperService, notificationService, initialDelay, period, unit)
+    + void start()
+  }
+}
+
+ScraperService --> ProductScraper
+ScraperService --> ProductRepository
+NotificationService --> NotificationHandler
+ReminderService --> ScraperService
+ReminderService --> NotificationService
+
+@enduml

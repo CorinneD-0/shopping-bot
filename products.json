@@ -1,0 +1,5 @@
+[ "java.util.ArrayList", [ [ "com.beautybot.domain.product.LeafProduct", {
+  "name" : "TestProd",
+  "price" : [ "java.math.BigDecimal", 9.99 ],
+  "children" : [ "java.util.ImmutableCollections$ListN", [ ] ]
+} ] ] ]

@@ -1,0 +1,237 @@
+2025-06-28 16:53:29.711 [com.beautybot.App.main()] INFO  com.beautybot.service.ScraperService - Starting scraping of products...
+2025-06-28 16:53:31.090 [com.beautybot.App.main()] ERROR com.beautybot.service.ScraperService - Error during scraping/persistence
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=[https://example.com/products.html]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:889) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:31) ~[classes/:?]
+	at com.beautybot.App.main(App.java:59) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+2025-06-28 16:53:31.098 [com.beautybot.App.main()] ERROR com.beautybot.App - Errore in esecuzione
+java.lang.RuntimeException: Errore nello scraping dei prodotti
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:40) ~[classes/:?]
+	at com.beautybot.App.main(App.java:59) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+Caused by: org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=[https://example.com/products.html]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:889) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:31) ~[classes/:?]
+	... 3 more
+2025-06-28 17:07:40.722 [main] DEBUG com.beautybot.service.FilterService - Filtering 2 items with maxPrice = 10.00
+2025-06-28 17:07:40.724 [main] DEBUG com.beautybot.service.FilterService - Filtered down to 1 items
+2025-06-28 17:08:12.167 [com.beautybot.App.main()] INFO  com.beautybot.service.ScraperService - Starting scraping of products...
+2025-06-28 17:08:13.651 [com.beautybot.App.main()] ERROR com.beautybot.service.ScraperService - Error during scraping/persistence
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=[https://example.com/products.html]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:889) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:31) ~[classes/:?]
+	at com.beautybot.App.main(App.java:59) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+2025-06-28 17:08:13.657 [com.beautybot.App.main()] ERROR com.beautybot.App - Errore in esecuzione
+java.lang.RuntimeException: Errore nello scraping dei prodotti
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:40) ~[classes/:?]
+	at com.beautybot.App.main(App.java:59) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+Caused by: org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=[https://example.com/products.html]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:889) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:31) ~[classes/:?]
+	... 3 more
+2025-06-28 18:12:06.104 [com.beautybot.App.main()] INFO  com.beautybot.service.ScraperService - Starting scraping of products...
+2025-06-28 18:12:07.452 [com.beautybot.App.main()] ERROR com.beautybot.service.ScraperService - Error during scraping/persistence
+org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=[https://example.com/products.html]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:889) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:28) ~[classes/:?]
+	at com.beautybot.App.main(App.java:62) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+2025-06-28 18:12:07.459 [com.beautybot.App.main()] ERROR com.beautybot.App - Errore in esecuzione
+java.lang.RuntimeException: Errore nello scraping dei prodotti
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:35) ~[classes/:?]
+	at com.beautybot.App.main(App.java:62) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+Caused by: org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=[https://example.com/products.html]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:889) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:28) ~[classes/:?]
+	... 3 more
+2025-06-28 18:16:53.628 [com.beautybot.App.main()] INFO  com.beautybot.service.ScraperService - Starting scraping of products...
+2025-06-28 18:16:53.647 [com.beautybot.App.main()] ERROR com.beautybot.service.ScraperService - Error during scraping/persistence
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:628) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:533) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.net.Socket.connect(Socket.java:665) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:274) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1029) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:962) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:898) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:871) ~[?:?]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:858) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:28) ~[classes/:?]
+	at com.beautybot.App.main(App.java:62) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+2025-06-28 18:16:53.651 [com.beautybot.App.main()] ERROR com.beautybot.App - Errore in esecuzione
+java.lang.RuntimeException: Errore nello scraping dei prodotti
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:35) ~[classes/:?]
+	at com.beautybot.App.main(App.java:62) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:628) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:533) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.net.Socket.connect(Socket.java:665) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:274) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1029) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:962) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:898) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:871) ~[?:?]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:858) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:28) ~[classes/:?]
+	... 3 more
+2025-06-28 18:53:38.221 [com.beautybot.App.main()] INFO  com.beautybot.service.ScraperService - Starting scraping of products...
+2025-06-28 18:53:38.243 [com.beautybot.App.main()] ERROR com.beautybot.service.ScraperService - Error during scraping/persistence
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:628) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:533) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.net.Socket.connect(Socket.java:665) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:274) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1029) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:962) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:898) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:871) ~[?:?]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:858) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:36) ~[classes/:?]
+	at com.beautybot.App.main(App.java:72) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+2025-06-28 18:53:38.246 [com.beautybot.App.main()] ERROR com.beautybot.App - Errore in esecuzione
+java.lang.RuntimeException: Errore nello scraping dei prodotti
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:43) ~[classes/:?]
+	at com.beautybot.App.main(App.java:72) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:628) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:533) ~[?:?]
+	at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.net.Socket.connect(Socket.java:665) ~[?:?]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:161) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[?:?]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[?:?]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:274) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[?:?]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1029) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:962) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:898) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:871) ~[?:?]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:858) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:36) ~[classes/:?]
+	... 3 more
+2025-06-28 18:57:20.737 [com.beautybot.App.main()] INFO  com.beautybot.service.ScraperService - Starting scraping of products...
+2025-06-28 18:57:20.746 [com.beautybot.App.main()] ERROR com.beautybot.service.ScraperService - Error during scraping/persistence
+java.net.MalformedURLException: Only http & https protocols supported
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:841) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:36) ~[classes/:?]
+	at com.beautybot.App.main(App.java:72) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+2025-06-28 18:57:20.750 [com.beautybot.App.main()] ERROR com.beautybot.App - Errore in esecuzione
+java.lang.RuntimeException: Errore nello scraping dei prodotti
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:43) ~[classes/:?]
+	at com.beautybot.App.main(App.java:72) ~[classes/:?]
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1447) ~[?:?]
+Caused by: java.net.MalformedURLException: Only http & https protocols supported
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:841) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:828) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:365) ~[jsoup-1.15.4.jar:1.15.4]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:352) ~[jsoup-1.15.4.jar:1.15.4]
+	at com.beautybot.scraper.JsoupProductScraper.scrape(JsoupProductScraper.java:36) ~[classes/:?]
+	at com.beautybot.service.ScraperService.scrapeAndPersist(ScraperService.java:36) ~[classes/:?]
+	... 3 more
+2025-06-28 18:59:19.224 [com.beautybot.App.main()] INFO  com.beautybot.service.ScraperService - Starting scraping of products...
+2025-06-28 18:59:19.270 [com.beautybot.App.main()] INFO  com.beautybot.service.ScraperService - Scraped 1 items
+2025-06-28 18:59:19.295 [com.beautybot.App.main()] INFO  com.beautybot.service.ScraperService - Saved 1 items to repository
+2025-06-28 18:59:19.295 [com.beautybot.App.main()] INFO  com.beautybot.App - === Prodotti correnti ===
+2025-06-28 18:59:19.296 [com.beautybot.App.main()] INFO  com.beautybot.App - === Offerte ≥ 5.00 ===
+2025-06-28 18:59:19.296 [com.beautybot.App.main()] INFO  com.beautybot.notification.NotificationService - Notifying offers for 1 items
+2025-06-28 18:59:19.296 [com.beautybot.App.main()] INFO  com.beautybot.App - Starting ReminderService for periodic scraping and notifications
+2025-06-28 18:59:19.298 [com.beautybot.App.main()] INFO  com.beautybot.reminder.ReminderService - Scheduling reminder: first run in 0 HOURS, then every 1 HOURS
+2025-06-28 18:59:19.299 [pool-2-thread-1] INFO  com.beautybot.reminder.ReminderService - ReminderService running scheduled task
+2025-06-28 18:59:19.299 [pool-2-thread-1] INFO  com.beautybot.service.ScraperService - Starting scraping of products...
+2025-06-28 18:59:19.302 [pool-2-thread-1] INFO  com.beautybot.service.ScraperService - Scraped 1 items
+2025-06-28 18:59:19.302 [pool-2-thread-1] INFO  com.beautybot.service.ScraperService - Saved 1 items to repository
+2025-06-28 18:59:19.302 [pool-2-thread-1] INFO  com.beautybot.notification.NotificationService - Notifying offers for 1 items
+2025-06-28 19:40:58.476 [main] DEBUG com.beautybot.service.FilterService - Filtering 2 items with maxPrice = 10.00
+2025-06-28 19:40:58.478 [main] DEBUG com.beautybot.service.FilterService - Filtered down to 1 items
+2025-06-28 19:52:13.251 [main] DEBUG com.beautybot.service.FilterService - Filtering 2 items with maxPrice = 10.00
+2025-06-28 19:52:13.253 [main] DEBUG com.beautybot.service.FilterService - Filtered down to 1 items
+2025-06-28 19:54:11.812 [main] DEBUG com.beautybot.service.FilterService - Filtering 2 items with maxPrice = 10.00
+2025-06-28 19:54:11.813 [main] DEBUG com.beautybot.service.FilterService - Filtered down to 1 items

@@ -1,0 +1,17 @@
+com/beautybot/service/FilterService.class
+com/beautybot/scraper/ProductScraper.class
+com/beautybot/App.class
+com/beautybot/repository/RepositoryFactory.class
+com/beautybot/domain/product/ProductComponentIterator.class
+com/beautybot/scraper/JsoupProductScraper.class
+com/beautybot/repository/JsonProductRepository.class
+com/beautybot/notification/NotificationHandler.class
+com/beautybot/domain/product/LeafProduct.class
+com/beautybot/repository/ProductRepository.class
+com/beautybot/service/ScraperService.class
+com/beautybot/domain/product/ProductComponent.class
+com/beautybot/di/BeautyBotModule.class
+com/beautybot/notification/NotificationService.class
+com/beautybot/domain/product/CompositeProduct.class
+com/beautybot/notification/PriceNotificationHandler.class
+com/beautybot/reminder/ReminderService.class
