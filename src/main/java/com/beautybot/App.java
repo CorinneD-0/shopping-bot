@@ -16,13 +16,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
-/**
- * Entry point dell’app:
- *   1) shielding input CLI  
- *   2) DI con Guice  
- *   3) scraping → persistence → fallback → stampa → notifiche  
- *   4) avvio ReminderService  
- */
+
 public class App {
     private static final Logger logger = LogManager.getLogger(App.class);
 
