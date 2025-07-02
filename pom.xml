@@ -46,7 +46,7 @@
     <artifactId>guice</artifactId>
     <version>${guice.version}</version>
    </dependency>
-  <!-- corretta coordinate per AssistedInject -->
+  <!-- AssistedInject -->
   <dependency>
     <groupId>com.google.inject.extensions</groupId>
     <artifactId>guice-assistedinject</artifactId>
