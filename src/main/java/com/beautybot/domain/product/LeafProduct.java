@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * Foglia del Composite Pattern.
- * Rappresenta un singolo prodotto con nome e prezzo.
+ * Foglia.
+ * Rappresenta i prodotti con nome e prezzo.
  */
 public class LeafProduct implements ProductComponent {
     private final String name;
